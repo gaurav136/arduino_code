@@ -1,0 +1,16 @@
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(2, OUTPUT);
+  pinMode(3, INPUT);
+  Serial.begin(9600);
+}
+
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  digitalWrite(2, HIGH);
+  Serial.println(1);
+  delay(1000);
+  Serial.println(0);
+  delay(1000);
+}
